@@ -1,0 +1,58 @@
+@import "vars";
+
+.search {
+  &__tabs {
+    margin-bottom: 25px;
+  }
+
+  &__tabs-item {
+    padding: 11px 26px 12px;
+    text-decoration: none;
+  }
+
+  &__tabs-item--active {
+    border-radius: 5px;
+    background-color: $cat-bg;
+    font-weight: 700;
+  }
+
+  &__content-item {
+    display: none;
+  }
+
+  &__content-item--active {
+    display: block;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 5px 20px;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: $cat-bg;
+    border-radius: 3px;
+    border: none;
+
+    &::placeholder {
+      color: $placeholder-color;
+    }
+  }
+
+  &__btn {
+    margin-left: -3px;
+    padding: 17px 41px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $light;
+    background-color: $accent;
+    border-radius: 3px;
+    border: none;
+  }
+}
