@@ -1,0 +1,39 @@
+@import "vars";
+
+.nav-categories {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 53px;
+  background-color: $cat-bg;
+
+  &__link {
+    position: relative;
+    padding: 15px 0 14px;
+    text-decoration: none;
+    transition: font-weight 0.3s;
+
+    &::after {
+      position: absolute;
+      width: 0;
+      height: 3px;
+      left: auto;
+      right: 0;
+      bottom: -5px;
+      background-color: $accent;
+      content: "";
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+        right: auto;
+        left: 0;
+      }
+    }
+  }
+}

@@ -1,12 +1,8 @@
-// $main-font: "Open Sans", sans-serif;
-// $second-font: "Oswald", sans-serif;
-
-// $accent-color: #005bc1;
-// $dark: #343434;
-// $light: #ffffff;
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
+@import "fonts";
+@import "common";
+@import "container";
+@import "header";
+@import "nav";
+@import "user-block";
+@import "cart";
+@import "nav-categories";

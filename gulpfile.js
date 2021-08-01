@@ -78,7 +78,6 @@ const scssTask = () => {
 const vendorsCssTask = () => {
   return gulp
     .src(config.app.vendorsCss)
-    .pipe(csso())
     .pipe(gulp.dest(config.dist.style))
     .pipe(browserSync.reload({ stream: true }));
 };
@@ -86,7 +85,6 @@ const vendorsCssTask = () => {
 const vendorsJsTask = () => {
   return gulp
     .src(config.app.vendorsJs)
-    .pipe(uglify())
     .pipe(gulp.dest(config.dist.js))
     .pipe(browserSync.reload({ stream: true }));
 };

@@ -1,0 +1,42 @@
+@import "vars";
+
+.header {
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 122px;
+    font-family: $main-font;
+    font-weight: 700;
+  }
+
+  &__info {
+    display: flex;
+  }
+
+  &__address {
+    position: relative;
+    width: 265px;
+    margin-right: 60px;
+    padding-left: 30px;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: -10px;
+      content: "";
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      background-image: url("../images/location-icon.svg");
+    }
+  }
+
+  &__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 53px;
+    background-color: $cat-bg;
+  }
+}
