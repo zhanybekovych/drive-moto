@@ -1,0 +1,71 @@
+@import "vars";
+
+.categories {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    width: 370px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all 0.3s;
+
+    &:hover &-title {
+      color: $accent;
+    }
+
+    &:hover {
+      box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    }
+  }
+
+  &__info {
+    width: 50%;
+  }
+
+  &__item-title {
+    margin: 0 0 52px 0;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    transform: all 0.3s;
+  }
+
+  &__item-txt {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding-right: 9px;
+    font-size: 14px;
+    line-height: 17px;
+    color: $price-old-color;
+
+    &::after {
+      position: absolute;
+      right: 0;
+      top: 4px;
+      width: 6px;
+      height: 9px;
+      content: "";
+      background-image: url("../images/gt.svg");
+    }
+  }
+
+  &__item-img-wrapper {
+    width: 50%;
+    text-align: center;
+  }
+
+  &__item-img {
+    max-width: 100%;
+  }
+}
