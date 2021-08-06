@@ -12,7 +12,7 @@
     text-decoration: none;
   }
 
-  &__tabs-item--active {
+  &__tabs-item.tabs__tab--active {
     border-radius: 5px;
     background-color: $cat-bg;
     font-weight: 700;
@@ -22,7 +22,7 @@
     display: none;
   }
 
-  &__content-item--active {
+  &__content-item.tabs__content--active {
     display: block;
   }
 
