@@ -1,0 +1,14 @@
+@import "vars";
+
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__item + &__item {
+    margin-left: 30px;
+  }
+}
