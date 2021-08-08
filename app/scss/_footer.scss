@@ -1,0 +1,93 @@
+@import "vars";
+
+.footer {
+  background-color: $cat-bg;
+
+  &__top {
+    padding-top: 43px;
+  }
+
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__top-item {
+    width: 200px;
+  }
+
+  &__top-socials {
+    width: 255px;
+  }
+
+  &__form-wrapper {
+    width: 295px;
+    margin-right: 55px;
+  }
+
+  &__top-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: $main-font;
+  }
+
+  &__form-title {
+    margin-bottom: 34px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form-input {
+    padding: 0 12px;
+    background-color: $light;
+    border: none;
+
+    ::placeholder {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: $price-old-color;
+    }
+  }
+
+  &__form-btn {
+    padding: 10px 16px;
+    background-color: $accent;
+    border: none;
+    font-family: $main-font;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $light;
+    cursor: pointer;
+  }
+
+  &__list {
+    margin: 5px 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__bottom {
+    padding: 46px 0 22px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__bottom-link {
+    margin: 0 40px;
+    font-size: 10px;
+    line-height: 12px;
+    color: $footer-bottom-link-color;
+  }
+}
