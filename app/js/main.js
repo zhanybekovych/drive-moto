@@ -21,8 +21,11 @@ $(function () {
   tabs.on("click", function (e) {
     e.preventDefault();
 
-    tabs.removeClass("tabs__tab--active");
-    $(".tabs__content").removeClass("tabs__content--active");
+    $($(this).siblings()).removeClass("tabs__tab--active");
+
+    $($(this).parent().siblings().find("div")).removeClass(
+      "tabs__content--active"
+    );
 
     $(this).addClass("tabs__tab--active");
     $($(this).attr("href")).addClass("tabs__content--active");
