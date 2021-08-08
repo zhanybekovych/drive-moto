@@ -1,6 +1,7 @@
 @import "vars";
 
 .products {
+  margin-bottom: 86px;
   &__title {
     margin: 0 0 25px;
     font-family: $secondary-font;
@@ -181,7 +182,6 @@
   &__item-more {
     text-align: center;
     margin-top: 35px;
-    margin-bottom: 86px;
   }
 
   &__more-link {

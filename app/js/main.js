@@ -28,6 +28,13 @@ $(function () {
     );
 
     $(this).addClass("tabs__tab--active");
-    $($(this).attr("href")).addClass("tabs__content--active");
+
+    const target = $($(this).attr("href"));
+
+    target.addClass("tabs__content--active");
+
+    if (target.find("div.slick-slider").hasClass("slick-initialized")) {
+      target.find(".products__slider").slick("refresh");
+    }
   });
 });
