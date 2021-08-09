@@ -1,0 +1,73 @@
+@import "vars";
+
+.catalog {
+  margin-bottom: 100px;
+
+  &__title {
+    margin-bottom: 26px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  &__sort {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__sort-links {
+    font-size: 0;
+  }
+
+  &__sort-link {
+    display: inline-block;
+    padding: 4px 28px;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: $cat-bg;
+    border-radius: 3px;
+    opacity: 0.7;
+  }
+
+  &__sort-link + &__sort-link {
+    margin-left: 8px;
+  }
+
+  &__sort-views {
+    display: flex;
+    align-items: center;
+  }
+
+  &__sort-view {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  &__sort-view + &__sort-view {
+    margin-left: 10px;
+  }
+
+  &__inner {
+    display: flex;
+    margin-bottom: 69px;
+  }
+
+  &__filter {
+    width: 290px;
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item-wrapper {
+    margin-bottom: 30px;
+  }
+}
