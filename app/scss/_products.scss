@@ -198,4 +198,12 @@
     text-transform: uppercase;
     background-color: $cat-bg;
   }
+
+  &__item-wrapper-list-view {
+    width: 100%;
+
+    .products__item {
+      width: 100%;
+    }
+  }
 }

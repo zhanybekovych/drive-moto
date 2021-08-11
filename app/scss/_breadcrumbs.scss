@@ -27,6 +27,11 @@
       background-image: url("../images/breadcrumb-back.svg");
     }
 
+    &__item a {
+      font: inherit;
+      color: inherit;
+    }
+
     &:last-child::after {
       display: none;
     }
