@@ -103,6 +103,10 @@
     text-decoration: none;
   }
 
+  &__item-img {
+    max-width: 100%;
+  }
+
   &__item-btn {
     padding: 3px;
     background-color: transparent;
@@ -134,10 +138,10 @@
   &__cart-icon {
     width: 30px;
     height: 23px;
-  }
 
-  path {
-    fill: $light;
+    path {
+      fill: $light;
+    }
   }
 
   &__item.products__item-not-available &__item-price {
@@ -193,5 +197,13 @@
     letter-spacing: 0.12em;
     text-transform: uppercase;
     background-color: $cat-bg;
+  }
+
+  &__item-wrapper-list-view {
+    width: 100%;
+
+    .products__item {
+      width: 100%;
+    }
   }
 }

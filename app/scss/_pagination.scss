@@ -1,0 +1,40 @@
+@import "vars";
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item + &__item {
+    margin-left: 20px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $price-old-color;
+    border: 2px solid transparent;
+  }
+
+  &__item--active {
+    padding: 8px 16px;
+    border: 2px solid $accent;
+    font-weight: 600;
+    color: $accent;
+  }
+
+  &__link {
+  }
+}
