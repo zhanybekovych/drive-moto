@@ -1,0 +1,14 @@
+.price-old {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 8px;
+    left: -4px;
+    right: 10px;
+    height: 1px;
+    background-color: $price-old-color;
+    transform: rotate(-17deg);
+    content: "";
+  }
+}
