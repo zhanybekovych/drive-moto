@@ -68,4 +68,26 @@ $(function () {
     $(".catalog__sort-view--grid").removeClass("catalog__sort-view--active");
     $(".products__item-wrapper").addClass("products__item-wrapper-list-view");
   });
+
+  const more = $(".product-single__specs-more");
+  const specs = $(".product-single__specs-body");
+  const less = $(".product-single__specs-less");
+
+  more.on("click", function () {
+    more.css("display", "none");
+    less.css("display", "inline-block");
+    specs.animate({ height: specs.get(0).scrollHeight }, 300);
+  });
+
+  less.on("click", function () {
+    more.css("display", "inline-block");
+    less.css("display", "none");
+    specs.css({ height: "235px" });
+  });
+
+  $(".rate-yo").rateYo({
+    normalFill: "#C4C4C4",
+    ratedFill: "#1C62CD",
+    spacing: "7px",
+  });
 });
